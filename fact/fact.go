@@ -20,6 +20,12 @@ const maxFactCharacterLimit = 64
 
 // Fact represents a piece of user-identifying information. This structure can
 // be JSON marshalled and unmarshalled.
+//
+// JSON example:
+//  {
+//    "Fact": "john@example.com",
+//    "T": 1
+//  }
 type Fact struct {
 	Fact string   `json:"Fact"`
 	T    FactType `json:"T"`
